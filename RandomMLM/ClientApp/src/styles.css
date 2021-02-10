@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+body {
+  background-color: #343a40;
+}
+
+h1 {
+  color: white
+}
+
+p {
+  color: white
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
