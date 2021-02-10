@@ -9,6 +9,8 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { RollDieComponent } from './roll-die/roll-die.component';
 import { GenerateRandomStringComponent } from './generate-random-string/generate-random-string.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { GenerateRandomStringComponent } from './generate-random-string/generate
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'roll-die', component: RollDieComponent },
       { path: 'generate-random-string', component: GenerateRandomStringComponent }
-    ])
+    ]),
+    BrowserAnimationsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
