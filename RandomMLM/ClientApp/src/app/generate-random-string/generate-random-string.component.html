@@ -1,6 +1,14 @@
-<form>
-  <mat-form-field style="width:20em !important">
-    <mat-label>Length (in characters, maximum: 100)</mat-label>
-    <input matInput type="number" placeholder="Pick the desired string length (ex. 10)" value="10" min="1" max="100">
-  </mat-form-field>
-</form>
+<mat-form-field style="width:20em !important">
+  <mat-label>Length (in characters, maximum: 100)</mat-label>
+  <input [(ngModel)]="stringLength" matInput type="number" placeholder="Pick the desired string length (ex. 10)" min="1" max="100">
+</mat-form-field>
+<mat-selection-list [(ngModel)]="selectedCharacterSets" style="width:20em !important">
+  <mat-list-option *ngFor="let characterSet of characterSets" [value]="characterSet.name">
+    {{characterSet.displayName}}
+  </mat-list-option>
+</mat-selection-list>
+<button (click)="onHitMe()">Hit me!</button>
+<p>Generated strings so far:</p>
+<ul>
+  <li *ngFor="let generatedString of generatedStrings">{{generatedString}}</li>
+</ul>

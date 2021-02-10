@@ -10,7 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { RollDieComponent } from './roll-die/roll-die.component';
 import { GenerateRandomStringComponent } from './generate-random-string/generate-random-string.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { MatInputModule } from '@angular/material/input';
       { path: 'generate-random-string', component: GenerateRandomStringComponent }
     ]),
     BrowserAnimationsModule,
-    MatInputModule
+    MatInputModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

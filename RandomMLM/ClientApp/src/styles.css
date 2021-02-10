@@ -13,6 +13,10 @@ p {
   color: white
 }
 
+li {
+  color: white
+}
+
 .mat-form-field-label {
   color: white !important;
 }
@@ -32,6 +36,18 @@ p {
 
 .mat-input-element::placeholder {
   color: blueviolet;
+}
+
+.mat-list-text {
+  color: white !important;
+}
+
+.mat-pseudo-checkbox {
+  color: white !important;
+}
+
+.mat-pseudo-checkbox-checked {
+  background: darkgreen
 }
 
 .center {
