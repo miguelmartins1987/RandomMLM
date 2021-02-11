@@ -1,5 +1,6 @@
 <div class="center">
-  <img src="assets/dice.png">
+  <mat-spinner *ngIf="!imageLoaded"></mat-spinner>
+  <img [hidden]="!imageLoaded" (load)="showImage()" src="assets/dice.png">
 </div>
 <div class="center">
   <p class="roll-die-display-text">{{ displayText }}</p>

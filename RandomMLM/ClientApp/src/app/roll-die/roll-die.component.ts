@@ -16,6 +16,7 @@ export class RollDieComponent implements OnInit {
 
   displayText: string = 'Click the "Hit me!" button below to roll.';
   inProgress: boolean = false;
+  imageLoaded: boolean = false;
 
   onHitMe() {
     this.inProgress = true;
@@ -26,6 +27,10 @@ export class RollDieComponent implements OnInit {
     this.inProgress = false;
   }
 
+  showImage() {
+    this.imageLoaded = true;
+  }
+  
   updateDisplayText(rollValue: number) {
     this.displayText = 'You rolled a ' + rollValue;
     this.inProgress = false;
