@@ -8,6 +8,8 @@
   </mat-list-option>
 </mat-selection-list>
 <button (click)="onHitMe()">Hit me!</button>
+<mat-spinner *ngIf="inProgress"></mat-spinner>
+<p class="generate-random-string-display-message">{{ displayMessage }}</p>
 <p>Generated strings so far:</p>
 <ul>
   <li *ngFor="let generatedString of generatedStrings">{{generatedString}}</li>

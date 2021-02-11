@@ -42,6 +42,10 @@ li {
   color: white !important;
 }
 
+.mat-progress-spinner {
+  stroke: darkgreen
+}
+
 .mat-pseudo-checkbox {
   color: white !important;
 }
