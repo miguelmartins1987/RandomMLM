@@ -20,6 +20,7 @@ export class RollDieComponent implements OnInit {
 
   onHitMe() {
     this.inProgress = true;
+    this.displayText = 'Rolling...';
     this.rollDieService.getRandomRedditNumber().subscribe(value => this.updateDisplayText(value), error => this.onError(error));
   }
   onError(error: HttpErrorResponse): void {
